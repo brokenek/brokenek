@@ -1,6 +1,6 @@
 type: custom:clock-weather-card
 entity: weather.forecast_dom
-title: Głogów
+title: Tytuł
 sun_entity: sun.sun
 temperature_sensor: sensor.outdoor_temp
 humidity_sensor: sensor.outdoor_humidity
