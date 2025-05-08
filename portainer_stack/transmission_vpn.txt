@@ -1,0 +1,30 @@
+---
+version: "2"
+services:
+  transmission-openvpn:
+    image: haugene/transmission-openvpn:latest
+    container_name: transmission-openvpn-syno
+    restart: always
+    cap_add:
+      - NET_ADMIN # This runs the container with raised privileges
+    devices:
+      - /dev/net/tun # This creates a tunnel for Transmission
+    volumes:
+      - /srv/dev-disk-by-uuid-d1e1cccf-95b3-4ff4-a82c-eea2452d087b/usb_drive/Download/Download:/data # Change this to your Torrent path
+    environment:
+      - OPENVPN_PROVIDER=PIA # Or other compatible OpenVPN provider
+      - OPENVPN_CONFIG=france # Or other region that supports port forwarding. Check with your VPN provider
+      - OPENVPN_USERNAME=your_username # VPN provider username
+      - OPENVPN_PASSWORD=your_password# VPN provider password
+      - LOCAL_NETWORK=192.168.100.0/24 # If your server's IP address is 192.168.1.x, then use this. If your server's IP address is 192.168.0.x, then change to 192.168.0.0/24
+      - OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60 # Leave this as is
+      - PUID=100 #Change to your PUID
+      - PGID=100 #Change to your PGID
+      - USER= user
+      - PASS= password
+    ports:
+      - 9091:9091 #GUI Port
+      - 8888:8888 #Transmission Port
+    dns:
+      - 8.8.8.8 #Use whatever DNS provider you want. This is Google.
+      - 8.8.4.4 #Use whatever DNS provider you want. This is Google.
