@@ -1,9 +1,8 @@
 - 👋 Hi, I’m @brokenek
-- 👀 I’m interested in Home Automation , Docker and tech stuff
-- 🌱 I’m currently learning Java 
-- ⚡ Fun fact: ...
+In Portainer folder = transmission_vpn client over Private Internet Access VPN
 
-<!---
-brokenek/brokenek is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+In Home Assistant folder i will put a cards codes or yaml files 
+
+1 Clock-weather-card.png
+![clock-weather-card](https://github.com/user-attachments/assets/fb07d1e2-2353-40d2-9d38-b9a3fd354fda)
