@@ -1,0 +1,81 @@
+square: false
+type: grid
+cards:
+  - type: custom:mushroom-template-badge
+    icon: mdi:exit-run
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/przedpokoj
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    content: Przedpokój
+    color: green
+  - type: custom:mushroom-template-badge
+    icon: mdi:bed-double
+    color: violet
+    content: Sypialnia
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/sypialnia
+  - type: custom:mushroom-template-badge
+    icon: mdi:stove
+    content: Kuchnia
+    label: ""
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/kuchnia
+    color: yellow
+  - type: custom:mushroom-template-badge
+    icon: mdi:monitor-dashboard
+    color: red
+    content: Biuro
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/biuro
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+  - type: custom:mushroom-template-badge
+    icon: mdi:trash-can
+    color: white
+    content: Zsyp
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/zsyp
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+  - type: custom:mushroom-template-badge
+    icon: mdi:balcony
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/balkon
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    color: orange
+    content: Balkon
+  - type: custom:mushroom-template-badge
+    icon: mdi:shower-head
+    color: purple
+    content: Łazienka
+    tap_action:
+      action: navigate
+      navigation_path: /dashboard-testowy/łazienka
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
